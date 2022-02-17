@@ -11,6 +11,9 @@ class Customer {
             this.name = name;
         }
     }
+    getName() {
+        return this.name;
+    }
 }
 exports.default = Customer;
 //# sourceMappingURL=Customer.js.map

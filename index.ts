@@ -1,6 +1,20 @@
-import Customer from "./src/models/Customer";
+import CustomerController from "./src/controllers/CustomerController";
+import ICreateCustomerDTO from "./src/dto/ICreateCustomerDTO";
 
-let customer:Customer = new Customer("Leandro", "131321321", 141)
+CustomerController.create(
+    {
+        name: "sadsadasdsa",
+        phone: "sadasdasdsa",
+        age: 1231
+    } as ICreateCustomerDTO
+)
 
-console.log("Cliente")
-console.log(customer)
+CustomerController.create(
+    {
+        name: "Jao",
+        phone: "sadasdasdsa",
+        age: 1231
+    } 
+)
+
+console.log(CustomerController.findAll())

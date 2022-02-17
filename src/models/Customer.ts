@@ -1,9 +1,9 @@
 export default class Customer{
     private name: string
     private phone: string;
-    private age: number;
+    private age?: number;
 
-    constructor(name: string, phone: string, age: number){
+    constructor(name: string, phone: string, age?: number){
         this.name = name
         this.age = age
         this.phone = phone
@@ -13,5 +13,9 @@ export default class Customer{
         if (name.indexOf(" ") >= 0){
             this.name = name
         }
+    }
+
+    getName(){
+        return this.name
     }
 }
